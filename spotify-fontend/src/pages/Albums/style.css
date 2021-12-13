@@ -1,0 +1,21 @@
+button.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-page.MuiPaginationItem-textSecondary {
+    background: #3bc8e7;
+    font-size: 15px;
+    font-weight: 600;
+    color: white !important;
+}
+.MuiPaginationItem-textSecondary.Mui-selected {
+    color: #fff;
+    background-color: #f50057 !important;
+}.MuiPaginationItem-ellipsis {
+    height: auto;
+    color: white !important;
+    font-size: x-large !important;
+}svg:not(:root) {
+    overflow: hidden;
+    font-size: x-large  !important;
+}nav.MuiPagination-root {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}

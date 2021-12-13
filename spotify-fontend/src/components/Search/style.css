@@ -1,0 +1,7 @@
+.MuiTab-root {
+    font-size: small !important;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #1b2039 !important;
+  }

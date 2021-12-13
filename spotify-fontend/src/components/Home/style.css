@@ -1,0 +1,11 @@
+@media (max-width: 480px) {
+  .ms_rcnt_box_text h3,
+  .w_top_song .w_tp_song_name h3 {
+    font-size: 13px;
+    display: contents;
+  }.weekly_left span.w_top_no{
+      display: none;
+  }.w_song_time{
+      display: none;
+  }
+}
