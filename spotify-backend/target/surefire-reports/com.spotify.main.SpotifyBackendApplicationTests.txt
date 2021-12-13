@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.spotify.main.SpotifyBackendApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.841 s <<< FAILURE! - in com.spotify.main.SpotifyBackendApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'albumController' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\controller\AlbumController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+Caused by: java.lang.NullPointerException
+

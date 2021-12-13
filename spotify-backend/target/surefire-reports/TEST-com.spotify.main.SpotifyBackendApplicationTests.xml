@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.spotify.main.SpotifyBackendApplicationTests" time="6.841" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\SourceCode\spotify-backend\target\test-classes;E:\SourceCode\spotify-backend\target\classes;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.5.1\spring-boot-starter-data-jpa-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.5.1\spring-boot-starter-aop-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aop\5.3.8\spring-aop-5.3.8.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.5.1\spring-boot-starter-jdbc-2.5.1.jar;C:\Users\Admin\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jdbc\5.3.8\spring-jdbc-5.3.8.jar;C:\Users\Admin\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\Admin\.m2\repository\org\hibernate\hibernate-core\5.4.32.Final\hibernate-core-5.4.32.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar;C:\Users\Admin\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.10.22\byte-buddy-1.10.22.jar;C:\Users\Admin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Admin\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\Admin\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Admin\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Admin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Admin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.4\jaxb-runtime-2.3.4.jar;C:\Users\Admin\.m2\repository\org\glassfish\jaxb\txw2\2.3.4\txw2-2.3.4.jar;C:\Users\Admin\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\Admin\.m2\repository\org\springframework\data\spring-data-jpa\2.5.1\spring-data-jpa-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\data\spring-data-commons\2.5.1\spring-data-commons-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-orm\5.3.8\spring-orm-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-context\5.3.8\spring-context-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-tx\5.3.8\spring-tx-5.3.8.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aspects\5.3.8\spring-aspects-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.5.1\spring-boot-starter-web-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter\2.5.1\spring-boot-starter-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot\2.5.1\spring-boot-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.5.1\spring-boot-autoconfigure-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.5.1\spring-boot-starter-logging-2.5.1.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.14.1\log4j-to-slf4j-2.14.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\Admin\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.5.1\spring-boot-starter-json-2.5.1.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.12.3\jackson-datatype-jdk8-2.12.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.12.3\jackson-module-parameter-names-2.12.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.5.1\spring-boot-starter-tomcat-2.5.1.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.46\tomcat-embed-core-9.0.46.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.46\tomcat-embed-el-9.0.46.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.46\tomcat-embed-websocket-9.0.46.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-webmvc\5.3.8\spring-webmvc-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-expression\5.3.8\spring-expression-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-web-services\2.5.1\spring-boot-starter-web-services-2.5.1.jar;C:\Users\Admin\.m2\repository\com\sun\xml\messaging\saaj\saaj-impl\1.5.3\saaj-impl-1.5.3.jar;C:\Users\Admin\.m2\repository\jakarta\xml\soap\jakarta.xml.soap-api\1.4.2\jakarta.xml.soap-api-1.4.2.jar;C:\Users\Admin\.m2\repository\org\jvnet\staxex\stax-ex\1.8.3\stax-ex-1.8.3.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Admin\.m2\repository\jakarta\xml\ws\jakarta.xml.ws-api\2.3.3\jakarta.xml.ws-api-2.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\jws\jakarta.jws-api\2.1.0\jakarta.jws-api-2.1.0.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-oxm\5.3.8\spring-oxm-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\ws\spring-ws-core\3.1.1\spring-ws-core-3.1.1.jar;C:\Users\Admin\.m2\repository\org\springframework\ws\spring-xml\3.1.1\spring-xml-3.1.1.jar;C:\Users\Admin\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\Admin\.m2\repository\org\modelmapper\modelmapper\2.4.2\modelmapper-2.4.2.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\Admin\.m2\repository\log4j\log4j\1.2.13\log4j-1.2.13.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.7\commons-lang3-3.7.jar;C:\Users\Admin\.m2\repository\com\mpatric\mp3agic\0.9.1\mp3agic-0.9.1.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.4\jackson-datatype-jsr310-2.12.4.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.5.1\spring-boot-starter-test-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-test\2.5.1\spring-boot-test-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.5.1\spring-boot-test-autoconfigure-2.5.1.jar;C:\Users\Admin\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\Admin\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\Admin\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\Admin\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\Admin\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Admin\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\Admin\.m2\repository\org\mockito\mockito-core\3.9.0\mockito-core-3.9.0.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.22\byte-buddy-agent-1.10.22.jar;C:\Users\Admin\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Admin\.m2\repository\org\mockito\mockito-junit-jupiter\3.9.0\mockito-junit-jupiter-3.9.0.jar;C:\Users\Admin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Admin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-core\5.3.8\spring-core-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jcl\5.3.8\spring-jcl-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-test\5.3.8\spring-test-5.3.8.jar;C:\Users\Admin\.m2\repository\org\xmlunit\xmlunit-core\2.8.2\xmlunit-core-2.8.2.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-web\5.3.8\spring-web-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-beans\5.3.8\spring-beans-5.3.8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire2130077866224442315\surefirebooter1854584723708545341.jar C:\Users\Admin\AppData\Local\Temp\surefire2130077866224442315 2021-08-07T13-51-20_796-jvmRun1 surefire3776645637534986548tmp surefire_05222245218215175052tmp"/>
+    <property name="surefire.test.class.path" value="E:\SourceCode\spotify-backend\target\test-classes;E:\SourceCode\spotify-backend\target\classes;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.5.1\spring-boot-starter-data-jpa-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.5.1\spring-boot-starter-aop-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aop\5.3.8\spring-aop-5.3.8.jar;C:\Users\Admin\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.5.1\spring-boot-starter-jdbc-2.5.1.jar;C:\Users\Admin\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jdbc\5.3.8\spring-jdbc-5.3.8.jar;C:\Users\Admin\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar;C:\Users\Admin\.m2\repository\org\hibernate\hibernate-core\5.4.32.Final\hibernate-core-5.4.32.Final.jar;C:\Users\Admin\.m2\repository\org\jboss\logging\jboss-logging\3.4.2.Final\jboss-logging-3.4.2.Final.jar;C:\Users\Admin\.m2\repository\org\javassist\javassist\3.27.0-GA\javassist-3.27.0-GA.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy\1.10.22\byte-buddy-1.10.22.jar;C:\Users\Admin\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Admin\.m2\repository\org\jboss\jandex\2.2.3.Final\jandex-2.2.3.Final.jar;C:\Users\Admin\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Admin\.m2\repository\org\dom4j\dom4j\2.1.3\dom4j-2.1.3.jar;C:\Users\Admin\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Admin\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.4\jaxb-runtime-2.3.4.jar;C:\Users\Admin\.m2\repository\org\glassfish\jaxb\txw2\2.3.4\txw2-2.3.4.jar;C:\Users\Admin\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar;C:\Users\Admin\.m2\repository\org\springframework\data\spring-data-jpa\2.5.1\spring-data-jpa-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\data\spring-data-commons\2.5.1\spring-data-commons-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-orm\5.3.8\spring-orm-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-context\5.3.8\spring-context-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-tx\5.3.8\spring-tx-5.3.8.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-aspects\5.3.8\spring-aspects-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.5.1\spring-boot-starter-web-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter\2.5.1\spring-boot-starter-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot\2.5.1\spring-boot-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.5.1\spring-boot-autoconfigure-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.5.1\spring-boot-starter-logging-2.5.1.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\Admin\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.14.1\log4j-to-slf4j-2.14.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\jul-to-slf4j\1.7.30\jul-to-slf4j-1.7.30.jar;C:\Users\Admin\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.28\snakeyaml-1.28.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.5.1\spring-boot-starter-json-2.5.1.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.12.3\jackson-datatype-jdk8-2.12.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.12.3\jackson-module-parameter-names-2.12.3.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.5.1\spring-boot-starter-tomcat-2.5.1.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.46\tomcat-embed-core-9.0.46.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.46\tomcat-embed-el-9.0.46.jar;C:\Users\Admin\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.46\tomcat-embed-websocket-9.0.46.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-webmvc\5.3.8\spring-webmvc-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-expression\5.3.8\spring-expression-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-web-services\2.5.1\spring-boot-starter-web-services-2.5.1.jar;C:\Users\Admin\.m2\repository\com\sun\xml\messaging\saaj\saaj-impl\1.5.3\saaj-impl-1.5.3.jar;C:\Users\Admin\.m2\repository\jakarta\xml\soap\jakarta.xml.soap-api\1.4.2\jakarta.xml.soap-api-1.4.2.jar;C:\Users\Admin\.m2\repository\org\jvnet\staxex\stax-ex\1.8.3\stax-ex-1.8.3.jar;C:\Users\Admin\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Admin\.m2\repository\jakarta\xml\ws\jakarta.xml.ws-api\2.3.3\jakarta.xml.ws-api-2.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\jws\jakarta.jws-api\2.1.0\jakarta.jws-api-2.1.0.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-oxm\5.3.8\spring-oxm-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\ws\spring-ws-core\3.1.1\spring-ws-core-3.1.1.jar;C:\Users\Admin\.m2\repository\org\springframework\ws\spring-xml\3.1.1\spring-xml-3.1.1.jar;C:\Users\Admin\.m2\repository\mysql\mysql-connector-java\8.0.25\mysql-connector-java-8.0.25.jar;C:\Users\Admin\.m2\repository\org\modelmapper\modelmapper\2.4.2\modelmapper-2.4.2.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.13.0\log4j-api-2.13.0.jar;C:\Users\Admin\.m2\repository\log4j\log4j\1.2.13\log4j-1.2.13.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.13.3\log4j-core-2.13.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.7\commons-lang3-3.7.jar;C:\Users\Admin\.m2\repository\com\mpatric\mp3agic\0.9.1\mp3agic-0.9.1.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.4\jackson-datatype-jsr310-2.12.4.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.20\lombok-1.18.20.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-starter-test\2.5.1\spring-boot-starter-test-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-test\2.5.1\spring-boot-test-2.5.1.jar;C:\Users\Admin\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.5.1\spring-boot-test-autoconfigure-2.5.1.jar;C:\Users\Admin\.m2\repository\com\jayway\jsonpath\json-path\2.5.0\json-path-2.5.0.jar;C:\Users\Admin\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\Admin\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\Admin\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\Admin\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\Admin\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\Admin\.m2\repository\org\assertj\assertj-core\3.19.0\assertj-core-3.19.0.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter\5.7.2\junit-jupiter-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.2\junit-jupiter-api-5.7.2.jar;C:\Users\Admin\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Admin\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-commons\1.7.2\junit-platform-commons-1.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.7.2\junit-jupiter-params-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.2\junit-jupiter-engine-5.7.2.jar;C:\Users\Admin\.m2\repository\org\junit\platform\junit-platform-engine\1.7.2\junit-platform-engine-1.7.2.jar;C:\Users\Admin\.m2\repository\org\mockito\mockito-core\3.9.0\mockito-core-3.9.0.jar;C:\Users\Admin\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.22\byte-buddy-agent-1.10.22.jar;C:\Users\Admin\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;C:\Users\Admin\.m2\repository\org\mockito\mockito-junit-jupiter\3.9.0\mockito-junit-jupiter-3.9.0.jar;C:\Users\Admin\.m2\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;C:\Users\Admin\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-core\5.3.8\spring-core-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-jcl\5.3.8\spring-jcl-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-test\5.3.8\spring-test-5.3.8.jar;C:\Users\Admin\.m2\repository\org\xmlunit\xmlunit-core\2.8.2\xmlunit-core-2.8.2.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-web\5.3.8\spring-web-5.3.8.jar;C:\Users\Admin\.m2\repository\org\springframework\spring-beans\5.3.8\spring-beans-5.3.8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_221\jre"/>
+    <property name="basedir" value="E:\SourceCode\spotify-backend"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire2130077866224442315\surefirebooter1854584723708545341.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_221\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_221\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="user.name" value="Admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Admin\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2021.1.2"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="user.dir" value="E:\SourceCode\spotify-backend"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-11.0.7\bin;C:\Program Files\nodejs;D:\Program Files\Maven\apache-maven-3.6.3\bin;E:\PHAN_MEM\Inteldj\IntelliJ IDEA 2020.1.1\bin;D:\Program Files\Git\bin;C:\Program Files (x86)\GitExtensions\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;D:\Program Files\Git\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Admin\AppData\Local\Yarn\bin;C:\Users\Admin\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="contextLoads" classname="com.spotify.main.SpotifyBackendApplicationTests" time="0.001">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'albumController' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\controller\AlbumController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+Caused by: java.lang.NullPointerException
+</error>
+    <system-out><![CDATA[13:51:21.772 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+13:51:21.787 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+13:51:21.828 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.spotify.main.SpotifyBackendApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+13:51:21.841 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.spotify.main.SpotifyBackendApplicationTests], using SpringBootContextLoader
+13:51:21.845 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.spotify.main.SpotifyBackendApplicationTests]: class path resource [com/spotify/main/SpotifyBackendApplicationTests-context.xml] does not exist
+13:51:21.846 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.spotify.main.SpotifyBackendApplicationTests]: class path resource [com/spotify/main/SpotifyBackendApplicationTestsContext.groovy] does not exist
+13:51:21.846 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.spotify.main.SpotifyBackendApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:51:21.847 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.spotify.main.SpotifyBackendApplicationTests]: SpotifyBackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:51:21.892 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.spotify.main.SpotifyBackendApplicationTests]
+13:51:22.005 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [E:\SourceCode\spotify-backend\target\classes\com\spotify\SpotifyBackendApplication.class]
+13:51:22.007 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.spotify.SpotifyBackendApplication for test class com.spotify.main.SpotifyBackendApplicationTests
+13:51:22.195 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.spotify.main.SpotifyBackendApplicationTests]: using defaults.
+13:51:22.198 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+13:51:22.251 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2d901eb0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3ba987b8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3f191845, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5f049ea1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@72cc7e6f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5afa3c9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@72035809, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@909217e, org.springframework.test.context.event.EventPublishingTestExecutionListener@18271936, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@606e4010, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@8458f04, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@48075da3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@68c9133c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@7a35b0f5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5e2c3d18]
+13:51:22.268 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2767e23c testClass = SpotifyBackendApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@710c2b53 testClass = SpotifyBackendApplicationTests, locations = '{}', classes = '{class com.spotify.SpotifyBackendApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1afd44cb, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@43195e57, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@71809907, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3bb9a3ff, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@5876a9af, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@224edc67], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+13:51:22.324 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.1)
+
+2021-08-07 13:51:22.720  INFO 10308 --- [           main] c.s.main.SpotifyBackendApplicationTests  : Starting SpotifyBackendApplicationTests using Java 1.8.0_221 on AdminPC with PID 10308 (started by Admin in E:\SourceCode\spotify-backend)
+2021-08-07 13:51:22.723  INFO 10308 --- [           main] c.s.main.SpotifyBackendApplicationTests  : No active profile set, falling back to default profiles: default
+2021-08-07 13:51:23.486  INFO 10308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-07 13:51:23.619  INFO 10308 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 13 JPA repository interfaces.
+2021-08-07 13:51:24.043  INFO 10308 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$896aeb1f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-08-07 13:51:24.104  INFO 10308 --- [           main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2021-08-07 13:51:24.307  INFO 10308 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-07 13:51:25.371  INFO 10308 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-07 13:51:25.533  INFO 10308 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-07 13:51:25.597  INFO 10308 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-07 13:51:25.840  INFO 10308 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-07 13:51:25.987  INFO 10308 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-07 13:51:27.147  INFO 10308 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-07 13:51:27.168  INFO 10308 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-07 13:51:28.363  WARN 10308 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'albumController' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\controller\AlbumController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2021-08-07 13:51:28.363  INFO 10308 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-07 13:51:28.367  INFO 10308 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-07 13:51:28.392  INFO 10308 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-07 13:51:28.409  INFO 10308 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-08-07 13:51:28.451 ERROR 10308 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'albumController' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\controller\AlbumController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.1.jar:2.5.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.1.jar:2.5.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.1.jar:2.5.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) [spring-boot-test-2.5.1.jar:2.5.1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) [spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) [spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) [spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) [spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) [spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) [spring-test-5.3.8.jar:5.3.8]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_221]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_221]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382) ~[na:1.8.0_221]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[na:1.8.0_221]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[na:1.8.0_221]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:1.8.0_221]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_221]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_221]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[na:1.8.0_221]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_221]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_221]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_221]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 85 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 99 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.spotify.ultils.LoggerFactory.getLogger(LoggerFactory.java:20) ~[classes/:na]
+	at com.spotify.service.impl.AlbumServiceImpl.<init>(AlbumServiceImpl.java:36) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_221]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_221]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 101 common frames omitted
+
+2021-08-07 13:51:28.456 ERROR 10308 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2d901eb0] to prepare test instance [com.spotify.main.SpotifyBackendApplicationTests@25421809]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138) [spring-test-5.3.8.jar:5.3.8]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_221]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_221]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382) ~[na:1.8.0_221]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[na:1.8.0_221]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[na:1.8.0_221]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312) ~[na:1.8.0_221]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_221]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_221]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580) ~[na:1.8.0_221]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_221]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258) [junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65) ~[junit-jupiter-engine-5.7.2.jar:5.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_221]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[na:1.8.0_221]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.7.2.jar:1.7.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128) ~[junit-platform-launcher-1.3.1.jar:1.3.1]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124) ~[surefire-junit-platform-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'albumController' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\controller\AlbumController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.1.jar:2.5.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.1.jar:2.5.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.1.jar:2.5.1]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123) ~[spring-boot-test-2.5.1.jar:2.5.1]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.3.8.jar:5.3.8]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.3.8.jar:5.3.8]
+	... 67 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'albumServiceImpl' defined in file [E:\SourceCode\spotify-backend\target\classes\com\spotify\service\impl\AlbumServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 85 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.spotify.service.impl.AlbumServiceImpl]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 99 common frames omitted
+Caused by: java.lang.NullPointerException: null
+	at com.spotify.ultils.LoggerFactory.getLogger(LoggerFactory.java:20) ~[classes/:na]
+	at com.spotify.service.impl.AlbumServiceImpl.<init>(AlbumServiceImpl.java:36) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_221]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_221]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_221]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_221]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 101 common frames omitted
+
+]]></system-out>
+    <system-err><![CDATA[java.nio.file.NoSuchFileException: C:\Users\Admin\Desktop\Toeic\SourceCode\Backend\Logger\AlbumServiceImpl.log.lck
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:115)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at java.util.logging.FileHandler.openFiles(FileHandler.java:478)
+	at java.util.logging.FileHandler.<init>(FileHandler.java:310)
+	at com.spotify.ultils.LoggerFactory.getLogger(LoggerFactory.java:14)
+	at com.spotify.service.impl.AlbumServiceImpl.<init>(AlbumServiceImpl.java:36)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:123)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:350)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:355)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$7(ClassBasedTestDescriptor.java:350)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:349)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$4(ClassBasedTestDescriptor.java:270)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:269)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:259)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:258)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:101)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:100)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:65)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:111)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:79)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:129)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:127)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:126)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:84)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]></system-err>
+  </testcase>
+</testsuite>

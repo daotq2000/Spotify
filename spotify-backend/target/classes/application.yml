@@ -1,0 +1,7 @@
+security:
+  jwt:
+    uri: /auth/**
+    header: Authorization
+    prefix: Bearer
+    expiration: 1000
+    secret: JwtSecretKey
